@@ -31,8 +31,8 @@ type AirplaneStatus
     | Cancelled
 
 
-evaluateAirplane : AirplaneStatus -> String
-evaluateAirplane status =
+airplaneScheduleAction : AirplaneStatus -> String
+airplaneScheduleAction status =
     case status of
         Cancelled ->
             "Pedir reembolso"
@@ -49,4 +49,4 @@ evaluateAirplane status =
 
 airportAction : List AirplaneStatus -> List String
 airportAction list =
-    List.map evaluateAirplane list
+    List.map airplaneScheduleAction list
