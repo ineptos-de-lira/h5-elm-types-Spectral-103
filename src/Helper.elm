@@ -9,7 +9,7 @@ type GradeStatus
 
 evaluateGrade : Float -> GradeStatus
 evaluateGrade status =
-    if status > 7 then
+    if status >= 7 then
         Approved
 
     else if status >= 0 then
